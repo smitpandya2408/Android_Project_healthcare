@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".LabTestDetailsActivity">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+  <TextView
+      android:id="@+id/textViewLDPackageName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:text="Lab Test And Package"
+      android:textColor="@color/yellowLight"
+      android:textSize="20sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView_logo6" />
+
+  <TextView
+      android:id="@+id/textView_logo6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="Delivery Location : Rajkot"
+      android:textColor="@android:color/black"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView_logo4" />
+
+  <TextView
+      android:id="@+id/textView_logo4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:text="OM HOSPITAL"
+      android:textColor="@color/black"
+      android:textSize="34sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLDAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:text="Book Appoinment"
+        app:layout_constraintBottom_toBottomOf="@id/buttonLDBack"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLDBack"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLDTextMultiLine"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonLDBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintStart_toEndOf="@id/buttonLDAddToCart" />
+
+  <EditText
+      android:id="@+id/editTextLDTextMultiLine"
+      android:layout_width="290dp"
+      android:layout_height="372dp"
+      android:layout_marginTop="16dp"
+      android:ems="10"
+      android:gravity="start|top"
+      android:inputType="textMultiLine"
+      android:padding="10dp"
+      android:text="Hi/Hello"
+      android:textColor="@android:color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.652"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textViewLDPackageName" />
+
+    <TextView
+        android:id="@+id/textViewLDTotalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="textView"
+        android:textColor="@color/yellowLight"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLDAddToCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLDPackageName"
+        app:layout_constraintVertical_bias="0.364" />
+
+    <TextView
+        android:id="@+id/textViewRegistrationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Patient Registration"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewLDTotalCost"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <EditText
+      android:id="@+id/editTextFullName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:background="@drawable/input_bg"
+      android:drawableLeft="@drawable/ic_baseline_person_24"
+      android:drawablePadding="16dp"
+        android:singleLine="true"
+        android:fitsSystemWindows="true"
+      android:hint="Full Name"
+      android:padding="16dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+      android:textColor="@android:color/black"
+      android:textColorHint="@color/black"
+      android:textSize="18sp"
+      app:layout_constraintTop_toBottomOf="@+id/textViewRegistrationTitle"
+      tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editTextPatientContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:singleLine="true"
+        android:fitsSystemWindows="true"
+        android:maxLength="10"
+        android:drawablePadding="16dp"
+        android:hint="Contact Number"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFullName"
+        tools:ignore="RtlHardcoded"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editTextAppAddress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="16dp"
+        android:hint="Address"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:singleLine="true"
+        android:fitsSystemWindows="true"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPatientContact"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textviewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="52dp"
+        android:text="Select Date"
+        android:textColor="@color/yellowLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textviewTime"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppAddress" />
+
+    <TextView
+        android:id="@+id/textviewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="52dp"
+        android:text="Select Time"
+        android:textColor="@color/yellowLight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppAddress" />
+
+    <Button
+        android:id="@+id/buttonAppDate"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="27/10/2024 "
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toEndOf="@+id/buttonAppTime"
+        app:layout_constraintTop_toBottomOf="@+id/textviewDate" />
+
+    <Button
+        android:id="@+id/buttonAppTime"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:text="10:00"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textviewTime" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/gray"
+        tools:context=".BookAppointmentActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OM HOSPITAL"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/textViewAppTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Appointment"
+                android:textSize="20dp"
+                android:textColor="@color/yellowLight"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/input_bg"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="16dp"
+                    android:hint="Full Name"
+                    android:padding="16dp"
+                    android:layout_marginRight="30dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTextAppAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/input_bg"
+                    android:drawableLeft="@drawable/ic_baseline_security_24"
+                    android:drawablePadding="16dp"
+                    android:hint="Address"
+                    android:layout_marginRight="30dp"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTextAppContactNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/input_bg"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="16dp"
+                    android:hint="Contact Number"
+                    android:inputType="number"
+                    android:layout_marginRight="30dp"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTextAppFees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/input_bg"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="16dp"
+                    android:hint="Fees"
+                    android:layout_marginRight="30dp"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/textviewDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:text="Select Date"
+                        android:textColor="@color/yellowLight" />
+
+                    <TextView
+                        android:id="@+id/textviewTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:text="Select Time"
+                        android:textColor="@color/yellowLight" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <Button
+                        android:id="@+id/buttonAppDate"
+                        style="?android:spinnerStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:textColor="@color/black"
+                        android:text="27/10/2024  " />
+
+                    <Button
+                        android:id="@+id/buttonAppTime"
+                        style="?android:spinnerStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/black"
+                        android:text="10:00 " />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <!-- Registration Elements -->
+
+            <TextView
+                android:id="@+id/textViewRegistrationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient Registration"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp" />
+
+            <EditText
+                android:id="@+id/editTextPatientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="16dp"
+                android:hint="Full Name"
+                android:singleLine="true"
+                android:fitsSystemWindows="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextPatientAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_baseline_security_24"
+                android:drawablePadding="16dp"
+                android:hint="Address"
+                android:singleLine="true"
+                android:fitsSystemWindows="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextPatientContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input_bg"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="16dp"
+                android:hint="Contact Number"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:fitsSystemWindows="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:inputType="phone"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/buttonBookAppointment"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg"
+                android:text="Book Appointment"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>

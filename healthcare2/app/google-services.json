@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "811791150574",
+    "project_id": "om-hospital-8c977",
+    "storage_bucket": "om-hospital-8c977.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811791150574:android:e26f5a89ae764b0b01b2ff",
+        "android_client_info": {
+          "package_name": "com.example.healthcare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3uOlLJ4ojqZBwpiLe1BoNAkNDUX8YEKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

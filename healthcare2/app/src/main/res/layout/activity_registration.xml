@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/textViewRegistrationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Registration"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:id="@+id/editTextPatientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="16dp"
+        android:hint="Full Name"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextPatientAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="16dp"
+        android:hint="Address"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextPatientContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="16dp"
+        android:hint="Contact Number"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>
